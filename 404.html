@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Page not available</title>
+<style>
+  html, body { height: 100%; margin: 0; background: #fff; color: #222; font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  main { min-height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 24px; }
+  h1 { margin: 0 0 4px; font-size: 64px; font-weight: 300; color: #bbb; letter-spacing: 2px; }
+  h2 { margin: 0 0 22px; font-size: 18px; font-weight: 500; color: #555; }
+  p { margin: 0 0 14px; max-width: 30em; }
+  a { color: #1a56c4; }
+  .small { color: #777; font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <h2>This page is no longer available.</h2>
+  <p>This material is part of ongoing, unpublished research, so I am no longer able to keep it openly accessible.</p>
+  <p>Thank you for your interest in my work. I appreciate you taking the time to look.</p>
+  <p>If you have questions, or would like to discuss the research, please get in touch:</p>
+  <p><span id="mail"></span><br><a href="https://www.linkedin.com/in/jihyooh/" rel="noopener">linkedin.com/in/jihyooh</a></p>
+  <noscript><p class="small">jihyo55oh [at] gmail [dot] com</p></noscript>
+</main>
+<script>
+  // The address is assembled here so simple scrapers reading the raw HTML do not find it.
+  var a = ["jihyo55oh", "gmail.com"].join("@");
+  document.getElementById("mail").innerHTML = '<a href="mailto:' + a + '">' + a + "</a>";
+</script>
+</body>
+</html>
